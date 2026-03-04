@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-social">
           <a 
-            href="https://github.com/yourusername" 
+            href="https://github.com/LC231" 
             target="_blank" 
             rel="noopener noreferrer"
             aria-label="GitHub"

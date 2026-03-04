@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
         <div className="hero-social">
           <a 
-            href="https://github.com/yourusername" 
+            href="https://github.com/LC231" 
             target="_blank" 
             rel="noopener noreferrer"
             aria-label="GitHub"

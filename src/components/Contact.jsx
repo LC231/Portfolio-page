@@ -132,7 +132,7 @@ const Contact = () => {
               </a>
 
               <a 
-                href="https://github.com/yourusername" 
+                href="https://github.com/LC231" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="contact-link"
@@ -144,7 +144,7 @@ const Contact = () => {
                 </div>
                 <div className="link-content">
                   <span className="link-label">GitHub</span>
-                  <span className="link-value">@yourusername</span>
+                  <span className="link-value">@LC231</span>
                 </div>
               </a>
 

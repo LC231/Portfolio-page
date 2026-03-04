@@ -10,7 +10,7 @@ import useGitHubRepos from './hooks/useGitHubRepos';
 import './App.css';
 
 // Replace 'yourusername' with your actual GitHub username
-const GITHUB_USERNAME = 'yourusername';
+const GITHUB_USERNAME = 'LC231';
 
 function App() {
   const { repos, languages, loading, error } = useGitHubRepos(GITHUB_USERNAME, {
