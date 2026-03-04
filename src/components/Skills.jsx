@@ -2,10 +2,12 @@ import './Skills.css';
 
 const Skills = ({ languages = [] }) => {
   const defaultSkills = {
-    'Languages': ['JavaScript', 'TypeScript', 'Python', 'HTML', 'CSS'],
-    'Frameworks': ['React', 'Node.js', 'Express', 'Next.js'],
-    'Tools': ['Git', 'VS Code', 'Docker', 'Webpack', 'Vite'],
-    'Databases': ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis'],
+    'Languages': ['Java', 'Python', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'SQL', 'Node.js', 'PHP', 'R'],
+    'Frameworks': ['React.js', 'React Native'],
+    'Tools': ['VS Code', 'Eclipse', 'NetBeans', 'Postman', 'Trello', 'Auth0', 'Vercel', 'Resend', 'Figma', 'Tableau'],
+    'Databases': ['MongoDB', 'MySQL', 'Berkeley DB'],
+    'AI & Data': ['Machine Learning', 'Random Forest', 'LLM Systems', 'Agent Orchestration', 'Data Preparation'],
+    'Testing': ['Automated API Testing', 'Regression Suite Design', 'QA Planning'],
   };
 
   const languagesFromGitHub = languages.length > 0 

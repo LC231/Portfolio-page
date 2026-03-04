@@ -18,7 +18,7 @@ const Footer = () => {
             </svg>
           </a>
           <a 
-            href="https://linkedin.com/in/yourusername" 
+            href="https://www.linkedin.com/in/luke-curran-80125935a/" 
             target="_blank" 
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -34,7 +34,7 @@ const Footer = () => {
         </p>
         
         <p className="footer-copyright">
-          © {currentYear} Your Name. All rights reserved.
+          © {currentYear} Luke Curran. All rights reserved.
         </p>
       </div>
     </footer>

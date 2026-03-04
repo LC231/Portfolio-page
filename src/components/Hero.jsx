@@ -15,11 +15,12 @@ const Hero = () => {
       </div>
       <div className="hero-content">
         <p className="hero-greeting">Hi, my name is</p>
-        <h1 className="hero-name">Your Name</h1>
-        <h2 className="hero-title">I build things for the web.</h2>
+        <h1 className="hero-name">Luke Curran</h1>
+        <h2 className="hero-title">Junior Software Developer</h2>
         <p className="hero-description">
-          I'm a software developer specializing in building exceptional digital experiences. 
-          Currently focused on creating accessible, human-centered products.
+          I'm a Junior Software Developer at BoostAI, specializing in web development, 
+          testing, and AI-driven systems. First Class Honours graduate passionate about 
+          building accessible, high-quality digital experiences.
         </p>
         <div className="hero-cta">
           <button 
@@ -47,7 +48,7 @@ const Hero = () => {
             </svg>
           </a>
           <a 
-            href="https://linkedin.com/in/yourusername" 
+            href="https://www.linkedin.com/in/luke-curran-80125935a/" 
             target="_blank" 
             rel="noopener noreferrer"
             aria-label="LinkedIn"

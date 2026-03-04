@@ -12,28 +12,31 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              Hello! I'm a passionate software developer who enjoys creating things 
-              that live on the internet. My interest in web development started back 
-              when I decided to try customizing my own projects — turns out that 
-              taught me a lot about HTML, CSS, and how things work under the hood!
+              Hello! I'm a Junior Software Developer and Computer Science graduate with 
+              a First Class Honours degree from Liverpool John Moores University. I'm 
+              currently working at BoostAI, where I contribute to feature development, 
+              structured testing, QA automation, and data workflows.
             </p>
             <p>
-              Fast-forward to today, and I've had the privilege of working on a 
-              variety of projects spanning different technologies and domains. My 
-              main focus these days is building accessible, inclusive products and 
-              digital experiences.
+              I'm skilled at building AI-driven systems, writing clear documentation, 
+              and delivering reliable, high-quality solutions. My experience spans 
+              React, Node.js, TypeScript, and modern web tooling, along with automated 
+              API testing and machine learning projects.
             </p>
             <p>
-              When I'm not coding, you can find me exploring new technologies, 
-              contributing to open source, or working on personal projects that 
-              challenge me to learn something new.
+              When I'm not coding, you can find me gaming, watching films, playing 
+              football or golf, or working on personal AI projects like ScoutBot AI 
+              and my Finance Agent assistant.
             </p>
           </div>
           
           <div className="about-image">
             <div className="image-wrapper">
               <div className="image-placeholder">
-                <span>Your Photo</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
               </div>
               <div className="image-border"></div>
             </div>
