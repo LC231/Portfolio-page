@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 
 const useGitHubRepos = (username, options = {}) => {
   const { 
-    perPage = 10, 
     sort = 'updated',
     excludeForks = true 
   } = options;
@@ -24,7 +23,7 @@ const useGitHubRepos = (username, options = {}) => {
         setError(null);
 
         const response = await fetch(
-          `https://api.github.com/users/${username}/repos?sort=${sort}&per_page=${perPage * 2}`
+          `https://api.github.com/users/${username}/repos?sort=${sort}&per_page=100`
         );
 
         if (!response.ok) {
@@ -37,8 +36,6 @@ const useGitHubRepos = (username, options = {}) => {
         if (excludeForks) {
           filteredRepos = data.filter(repo => !repo.fork);
         }
-
-        filteredRepos = filteredRepos.slice(0, perPage);
 
         const formattedRepos = filteredRepos.map(repo => ({
           id: repo.id,
@@ -71,7 +68,7 @@ const useGitHubRepos = (username, options = {}) => {
     };
 
     fetchRepos();
-  }, [username, perPage, sort, excludeForks]);
+  }, [username, sort, excludeForks]);
 
   return { repos, languages, loading, error };
 };

@@ -14,7 +14,6 @@ const GITHUB_USERNAME = 'LC231';
 
 function App() {
   const { repos, languages, loading, error } = useGitHubRepos(GITHUB_USERNAME, {
-    perPage: 6,
     sort: 'updated',
     excludeForks: true,
   });

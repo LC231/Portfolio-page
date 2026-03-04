@@ -1,6 +1,24 @@
+import { useState } from 'react';
 import './Projects.css';
 
 const Projects = ({ repos, loading, error }) => {
+  const [currentPage, setCurrentPage] = useState(0);
+  const cardsPerPage = 6;
+  const totalPages = Math.ceil(repos.length / cardsPerPage);
+
+  const currentRepos = repos.slice(
+    currentPage * cardsPerPage,
+    (currentPage + 1) * cardsPerPage
+  );
+
+  const goToPrevious = () => {
+    setCurrentPage((prev) => (prev > 0 ? prev - 1 : totalPages - 1));
+  };
+
+  const goToNext = () => {
+    setCurrentPage((prev) => (prev < totalPages - 1 ? prev + 1 : 0));
+  };
+
   if (loading) {
     return (
       <section id="projects" className="projects">
@@ -37,13 +55,40 @@ const Projects = ({ repos, loading, error }) => {
   return (
     <section id="projects" className="projects">
       <div className="projects-container">
-        <h2 className="section-title">
-          <span className="section-number">03.</span>
-          Featured Projects
-        </h2>
+        <div className="projects-header">
+          <h2 className="section-title">
+            <span className="section-number">03.</span>
+            Featured Projects
+          </h2>
+          {totalPages > 1 && (
+            <div className="carousel-controls">
+              <button 
+                className="carousel-btn" 
+                onClick={goToPrevious}
+                aria-label="Previous projects"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <span className="carousel-indicator">
+                {currentPage + 1} / {totalPages}
+              </span>
+              <button 
+                className="carousel-btn" 
+                onClick={goToNext}
+                aria-label="Next projects"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          )}
+        </div>
 
         <div className="projects-grid">
-          {repos.map((repo) => (
+          {currentRepos.map((repo) => (
             <article key={repo.id} className="project-card">
               <div className="project-header">
                 <div className="folder-icon">
