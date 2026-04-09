@@ -10,6 +10,7 @@ const Experience = () => {
       period: 'Sep 2025 - Present',
       description: [
         'Developed and improved platform features using React, Node.js, TypeScript, Figma, and modern web tooling',
+        'Built a Sopranos AI dashboard to surface key statistics and user data for internal reporting and decision-making',
         'Designed and maintained a structured regression test suite, reducing repeated defects and increasing test coverage',
         'Performed automated API testing in Postman, creating collections, environments, and scripted validations',
         'Investigated and reproduced issues reported by users or internal testers, contributing to faster resolution times',
